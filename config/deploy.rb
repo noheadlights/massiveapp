@@ -5,6 +5,7 @@ set :application, "massiveapp"
 set :scm, :git
 set :repository, "git@github.com:noheadlights/massiveapp.git"
 set :branch, "before_capistrano"
+set :bundle_flags,    ""
 
 server "localhost", :web, :app, :db, :primary => true
 
