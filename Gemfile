@@ -18,4 +18,4 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'execjs'
+gem 'therubyracer', :platform => :ruby
