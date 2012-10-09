@@ -4,10 +4,12 @@ gem 'gmetric'
 gem 'jquery-rails'
 #gem 'mysql2'
 gem 'rails', '3.2.2'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git',
+    :branch => 'static'
+#gem 'twitter-bootstrap-rails'
 gem 'whenever', :require => false
 gem 'paper_trail'
-gem 'sqlite'
+gem 'sqlite3'
 
 group :assets do
   gem 'sass-rails', '~> 3.2.3'
