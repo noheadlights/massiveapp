@@ -7,8 +7,11 @@ gem 'sqlite3'
 gem 'capistrano'
 
 gem 'rails', '3.2.2'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git',
-    :branch => 'static'
+group :development do
+#  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git',
+#      :branch => 'static'
+
+end
 gem 'whenever', :require => false
 gem 'paper_trail'
 
@@ -18,4 +21,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'therubyracer', :platform => :ruby
+group :production do
+  gem 'therubyracer', :platform => :ruby
+  gem 'twitter-bootstrap-rails', :platform => :ruby
+end
